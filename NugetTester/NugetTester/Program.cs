@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Ical.Net;
-using Ical.Net.CalendarComponents;
-using Ical.Net.DataTypes;
-using Ical.Net.Serialization;
+using iCalendar;
+using iCalendar.CalendarComponents;
+using iCalendar.DataTypes;
+using iCalendar.Serialization;
 
 namespace NugetTester
 {

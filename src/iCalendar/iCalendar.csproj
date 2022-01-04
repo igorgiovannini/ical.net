@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(NetStandardTargetVersion)</TargetFramework>
+    <RootNamespace>$(RootNamespace)</RootNamespace>
+    <Authors>$(Authors)</Authors>
+    <Company>$(Company)</Company>
+    <Description>$(Description)</Description>
+    <PackageLicenseExpression>$(License)</PackageLicenseExpression>
+    <Copyright>$(Copyright)</Copyright>
+    <PackageProjectUrl>$(ProjectUrl)</PackageProjectUrl>
+    <RepositoryUrl>$(RepositoryUrl)</RepositoryUrl>
+    <GeneratePackageOnBuild>${GeneratePackageOnBuild}</GeneratePackageOnBuild>
+    <Version>$(BaseVersion)</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIconUrl>$(IconUrl)</PackageIconUrl>
+    <PackageTags>$(Tags)</PackageTags>
+    <LangVersion>$(LangVersion)</LangVersion>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <PackageId>iCalendar</PackageId>
+    <Product>iCalendar</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\Ical.Net.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
